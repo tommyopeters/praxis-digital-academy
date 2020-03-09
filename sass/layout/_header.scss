@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001526;
+
+  .container {
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .logo {
+      img {
+        width: 90%;
+      }
+    }
+
+    .nav-menu {
+      &-item {
+        padding: 1rem 2rem;
+        background-color: rgb(211, 94, 23);
+        border-radius: 2rem;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1.4rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            font-size: 2rem;
+            margin-left: 1.5rem;
+            color: #00000060;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

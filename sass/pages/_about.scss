@@ -1,0 +1,33 @@
+main {
+  .headline {
+    // ---
+    min-height: 100rem;
+    background: linear-gradient(
+        to right,
+        rgba(0, 21, 38, 0.9),
+        rgba(0, 21, 38, 0.9)
+      ),
+      url("../assets/img/patterned-background.webp");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .container {
+      padding: 2rem;
+      .timeleft {
+        // ---
+        height: 8rem;
+      }
+      h2 {
+        font-size: 5rem;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
+.orange {
+  color: #ff6600;
+}
