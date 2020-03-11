@@ -42,9 +42,16 @@ main {
       justify-content: space-between;
       flex-wrap: wrap;
 
+      hr {
+        border-top: 0.3rem solid #ff6600;
+        width: 40%;
+        margin: 0 auto 4rem auto;
+      }
+
       .video-list-item {
         display: flex;
         margin-bottom: 5rem;
+
         &-text {
           margin-top: 5rem;
           font-size: 2rem;
@@ -63,7 +70,59 @@ main {
       }
     }
   }
-}
-.orange {
-  color: #ff6600;
+  .courses {
+    background: linear-gradient(
+        to right,
+        rgba(0, 21, 38, 0.9),
+        rgba(0, 21, 38, 0.9)
+      ),
+      url("../assets/img/wall-pattern-bg.jpg");
+    background-size: cover;
+
+    .course-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4rem;
+      padding: 5rem 0;
+
+      &-item {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        min-height: 30rem;
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        gap: 2rem;
+
+        &-image {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 100%;
+          }
+        }
+
+        &-desc {
+          display: grid;
+          padding: 1rem 1rem 1rem 0;
+          grid-template-rows: max-content max-content 1fr 20%;
+
+          p {
+            font-family: "Lato", sans-serif;
+            color: #332b2b;
+          }
+        }
+
+        hr {
+          width: 30%;
+          margin: 1rem 0;
+        }
+
+        .read-more {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
 }

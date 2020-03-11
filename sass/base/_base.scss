@@ -13,9 +13,5 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Ubuntu", "sans serif";
-}
-
-.container {
-  width: $container-width;
-  min-width: 117rem;
+  font-size: 1.8rem;
 }
