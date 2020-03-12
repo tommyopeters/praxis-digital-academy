@@ -39,6 +39,14 @@ body {
 .orange {
   color: #ff6600; }
 
+.blue {
+  color: #0072ba; }
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    min-width: 50%;
+    width: 80%; } }
+
 header {
   width: 100%;
   display: flex;
@@ -88,10 +96,19 @@ main .headline {
     main .headline .container .timeleft {
       height: 8rem; }
     main .headline .container h2 {
-      font-size: 5rem;
+      font-size: 7rem;
       color: white;
       font-weight: bold;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 5rem;
+      padding: 2rem;
+      border-top: 0.5rem solid #0072ba;
+      border-bottom: 0.5rem solid #0072ba; }
+    main .headline .container p {
+      font-size: 2.5rem;
+      width: 85%;
+      margin: auto;
+      color: white; }
 
 main .video-list {
   padding: 5rem 0; }
@@ -152,3 +169,48 @@ main .courses {
         margin: 1rem 0; }
       main .courses .course-list-item .read-more {
         margin-top: 2rem; }
+
+@media only screen and (max-width: 1250px) {
+  main .headline {
+    min-height: 100rem; }
+    main .headline .container .timeleft {
+      height: 8rem; }
+  main .courses .course-list {
+    margin: auto;
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 900px) {
+  main .headline {
+    min-height: 100rem; }
+    main .headline .container .timeleft {
+      height: 8rem; }
+  main .video-list .container {
+    width: 90%; }
+    main .video-list .container .video-list-item {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .video-list .container .video-list-item-text {
+        width: 100%;
+        margin: 0; }
+  main .courses .course-list {
+    padding-left: 15%;
+    padding-right: 15%;
+    grid-template-columns: 1fr; } }
+
+@media only screen and (max-width: 700px) {
+  main .headline {
+    min-height: 100rem; }
+    main .headline .container .timeleft {
+      height: 8rem; }
+  main .video-list .container {
+    width: 90%; }
+    main .video-list .container .video-list-item-text {
+      width: 100%;
+      margin: 0; }
+    main .video-list .container .video-list-item iframe {
+      width: 100%;
+      min-height: 4rem; }
+  main .courses .course-list {
+    padding-left: 5%;
+    padding-right: 5%; } }

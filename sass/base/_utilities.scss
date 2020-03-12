@@ -24,3 +24,17 @@
 .orange {
   color: #ff6600;
 }
+.blue {
+  color: #0072ba;
+}
+
+// * {
+//   border: 1px solid #f00 !important;
+// }
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    min-width: 50%;
+    width: 80%;
+  }
+}
