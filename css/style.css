@@ -83,6 +83,23 @@ header {
           color: #00000060;
           font-weight: bold; }
 
+@media only screen and (max-width: 940px) {
+  footer .container {
+    grid-template-columns: repeat(2, 1fr); }
+    footer .container .left-column {
+      display: none; } }
+
+@media only screen and (max-width: 800px) {
+  footer .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+    footer .container .left-column {
+      display: none; }
+    footer .container .middle-column {
+      display: block; }
+    footer .container .right-column {
+      display: block; } }
+
 main section {
   display: flex;
   justify-content: center;

@@ -1,0 +1,176 @@
+<<<<<<< HEAD
+=======
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001526;
+  color: white;
+  padding: 5rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-content: center;
+    gap: 5rem;
+
+    .left-column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .middle-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+        &-body {
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .contact {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 1rem;
+
+            &-item {
+              font-size: 1.6rem;
+              color: rgba(255, 255, 255, 0.7);
+              display: flex;
+
+              i {
+                margin-right: 1rem;
+              }
+              a {
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right-column {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+        &-body {
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.6rem;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  footer {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+
+      .left-column {
+        display: none;
+      }
+      .middle-column {
+        &-content {
+          h3 {
+          }
+          &-body {
+            .contact {
+              &-item {
+                i {
+                }
+                a {
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right-column {
+        &-content {
+          h3 {
+          }
+          &-body {
+            span {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      .left-column {
+        display: none;
+      }
+      .middle-column {
+        display: block;
+        &-content {
+          h3 {
+          }
+          &-body {
+            .contact {
+              &-item {
+                i {
+                }
+                a {
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right-column {
+        display: block;
+        &-content {
+          h3 {
+          }
+          &-body {
+            span {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+>>>>>>> a741578... Responsiveness
