@@ -19,6 +19,7 @@ header {
     }
 
     .nav-menu {
+      list-style-type: none;
       &-item {
         padding: 1rem 2rem;
         background-color: rgb(211, 94, 23);
