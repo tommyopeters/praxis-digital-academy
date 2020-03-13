@@ -257,11 +257,12 @@ main .courses {
         width: 30%;
         margin: 1rem 0; }
       main .courses .course-list-item .read-more {
-        margin-top: 2rem; }
+        margin-top: 2rem;
+        text-decoration: none; }
       main .courses .course-list-item .inactive {
         background-color: #7070705a;
         color: rgba(35, 35, 35, 0.897);
-        cursor: not-allowed; }
+        pointer-events: none; }
 
 @media only screen and (max-width: 1250px) {
   main .headline .container .timeleft {

@@ -130,12 +130,12 @@ main {
 
         .read-more {
           margin-top: 2rem;
+          text-decoration: none;
         }
         .inactive {
           background-color: #7070705a;
           color: rgba(35, 35, 35, 0.897);
-
-          cursor: not-allowed;
+          pointer-events: none;
         }
       }
     }
